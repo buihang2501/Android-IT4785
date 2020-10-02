@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="2"
+        android:gravity="bottom|right"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <LinearLayout style="@style/LayoutRow">
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="CE"
+            android:textSize="30dp" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="C" />
+
+        <ImageView
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:padding="30dp"
+            android:src="@drawable/icons8_clear_symbol_24" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutRow">
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="7" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="8" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="9" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="x" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutRow">
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="4" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="5" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="6" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutRow">
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="1" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="2" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="3" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#f0f0f0"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutRow"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="+/-" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="0" />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="@android:color/white"
+            android:text="." />
+
+        <Button
+            style="@style/ButtonCharacter"
+            android:background="#8abae0"
+            android:text="=" />
+
+    </LinearLayout>
+
+</LinearLayout>
