@@ -3,143 +3,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E6E6E6"
+    android:background="#E1E1E1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewResult"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
         android:layout_weight="2"
+        android:fontFamily="@font/digital_7"
         android:gravity="bottom|right"
         android:text="0"
         android:textColor="@android:color/black"
         android:textSize="60sp"
         android:textStyle="bold" />
 
-    <LinearLayout style="@style/LayoutRow">
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="CE"
-            android:textSize="30dp" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="C" />
-
-        <ImageView
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:padding="30dp"
-            android:src="@drawable/icons8_clear_symbol_24" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="/" />
-    </LinearLayout>
-
-    <LinearLayout style="@style/LayoutRow">
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="7" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="8" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="9" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="x" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/LayoutRow">
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="4" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="5" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="6" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="-" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/LayoutRow">
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="1" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="2" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="3" />
-
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#f0f0f0"
-            android:text="+" />
-
-    </LinearLayout>
-
     <LinearLayout
-        style="@style/LayoutRow"
-        android:layout_marginBottom="4dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#fefefe"
+        android:orientation="vertical">
 
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="+/-" />
+        <LinearLayout
+            style="@style/LayoutRow"
+            android:layout_marginTop="4dp">
 
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="0" />
+            <Button
+                android:id="@+id/buttonCE"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/ce"
+                android:textSize="30sp" />
 
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="@android:color/white"
-            android:text="." />
+            <Button
+                android:id="@+id/buttonC"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/c" />
 
-        <Button
-            style="@style/ButtonCharacter"
-            android:background="#8abae0"
-            android:text="=" />
+            <Button
+                android:id="@+id/buttonBS"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/bs"
+                android:textSize="30sp" />
 
+            <Button
+                android:id="@+id/buttonDivide"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/devide" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutRow">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/buttonEight"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_9" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/x" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutRow">
+
+            <Button
+                android:id="@+id/buttonFour"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_6" />
+
+            <Button
+                android:id="@+id/buttonSub"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/sub" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutRow">
+
+            <Button
+                android:id="@+id/buttonOne"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_3" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutRow"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/buttonConvert"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/convert" />
+
+            <Button
+                android:id="@+id/buttonZero"
+                style="@style/ButtonCharacter"
+                android:background="#efefef"
+                android:text="@string/_0" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/dot" />
+
+            <Button
+                android:id="@+id/buttonEqual"
+                style="@style/ButtonCharacter"
+                android:background="#dedede"
+                android:text="@string/equal" />
+
+        </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
