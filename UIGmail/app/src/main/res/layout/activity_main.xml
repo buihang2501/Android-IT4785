@@ -21,7 +21,6 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:src="@drawable/ic_baseline_format_list_bulleted_24" />
 
         <TextView
@@ -42,7 +41,6 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:src="@drawable/ic_baseline_search_24" />
     </LinearLayout>
 
@@ -50,7 +48,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/darker_gray"
+        android:background="#efefef"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"

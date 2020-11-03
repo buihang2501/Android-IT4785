@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         initView();
         initData();
@@ -42,7 +43,10 @@ public class MainActivity extends AppCompatActivity {
         fakers.add(new Faker());
         fakers.add(new Faker());
         fakers.add(new Faker());
-
+        fakers.add(new Faker());
+        fakers.add(new Faker());
+        fakers.add(new Faker());
+        fakers.add(new Faker());
 //        Log.d(TAG, "initData: " + fakers.get(i).);
 
         mailAdapter.updateData(fakers);
