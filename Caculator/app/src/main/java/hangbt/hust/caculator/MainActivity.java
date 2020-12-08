@@ -1,5 +1,6 @@
 package hangbt.hust.caculator;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.buttonEight).setOnClickListener(this);
         findViewById(R.id.buttonNine).setOnClickListener(this);
         findViewById(R.id.buttonZero).setOnClickListener(this);
+
+        textViewResult.setTypeface(null, Typeface.ITALIC);
 
     }
 
